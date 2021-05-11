@@ -1,0 +1,450 @@
+/* google fonts link */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Rajdhani:wght@300;400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+a,p,span,ul,li,b{
+    font-family: 'Rajdhani', sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Open Sans', sans-serif;
+}
+:root{
+    --bgColor:#562FC7;
+    --textColor:#fff;
+    --btnBgColor:#ff4800;
+    --pColor:#aaa;
+    --borderColor:#ddd;
+    --h2Color:#222;
+    --footerBg:#F5F8FA;
+}
+/* header area css */
+.navbar{
+    background-color: var(--bgColor) !important;
+}
+
+.navbar .navbar-nav .nav-item .nav-link{
+    color:var(--textColor);
+    font-family: "Open Sans" serif;
+    font-weight: 500;
+    margin: 10px;
+}
+.navbar ul.navbar-nav li.nav-item {
+    position: relative;
+}
+.navbar ul.navbar-nav li.nav-item ul.subMenu  {
+    position: absolute;
+    top: 110%;
+    left: 0;
+    background-color: var(--btnBgColor);
+    width: 200px;
+    color: var(--textColor);
+    border-radius: 10px;
+    opacity: 0;
+    visibility: hidden;
+    transform-origin: top center;
+    transform: scaleY(0);
+    transition: all .5s ease;
+}
+.navbar ul.navbar-nav li.nav-item:hover ul.subMenu {
+    opacity: 1;
+    visibility: visible;
+    transform: scaleY(1);
+}
+.navbar ul.navbar-nav li.nav-item ul.subMenu li.nav-item a.nav-link {}
+
+
+.headerBtn {
+    text-decoration: none;
+    display: inline-block;
+    padding: 13px 44px;
+    border-radius: 50px;
+    background-color: transparent;
+    font-size: 15px;
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 500;
+    color: var(--textColor);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    text-transform: uppercase;
+    border: 1px solid var(--textColor);
+}
+.headerBtn:hover{
+    background-color: var(--btnBgColor);
+    color:var(--textColor);
+    border: 1px solid var(--btnBgColor);
+    transform: scaleX(1);
+}
+/* hero area css */
+.heroArea {
+    background-image: url("./img/banner_bg_2.png");
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: 65% 100%;
+    background-position:left;
+    padding: 250px;
+
+}
+.heroImg img {
+    width: 400px;
+    position: relative;
+    top: 50px;
+}
+.heroTitle {
+    position: relative;
+    top: 140px;
+}
+
+.heroTitle h1 {
+    font-size: 55px;
+    font-weight: 700;
+}
+
+.heroBtn2 {
+    position: relative;
+    top: 200px;
+}
+
+.heroTitle p {
+    font-size: 16px;
+    line-height: 1.6;
+    font-weight: 500;
+    margin-top: 30px;
+    width: 400px;
+}
+.heroBtn2 .btn2 {
+    display: inline-block;
+    padding: 12px 44px;
+    border-radius: 50px;
+    background-color: var(--btnBgColor);
+    font-size: 15px;
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 500;
+    color: var(--textColor);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    text-transform: uppercase;
+    border: 2px solid var(--btnBgColor);
+}
+.heroBtn2 .btn2:hover{
+    background-color: transparent;
+    border: 2px solid var(--btnBgColor);
+    color: var(--btnBgColor);
+}
+/* serviceSection css */
+.serviceSection{
+    padding: 50px 0;
+    position: relative;
+}
+.servicContent p {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--pColor);
+    line-height: 1.7;
+    width: 350px;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+.servicTitle h2 {
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 2;
+    color: var(--h2Color);
+}
+
+.servicIcon img {
+    width: 100px;
+    margin-top: 20px;
+}
+
+.servicreWrapper {
+    background: var(--textColor);
+    box-shadow: 0px 0px 5px var(--bgColor);
+    border-radius: 5px;
+    padding: 30px;
+    position: relative;
+    transition: all .5s ease;
+    box-sizing: border-box;
+}
+.servicreWrapper:hover{
+    border: 1px solid var(--borderColor);
+    box-shadow: none;
+}
+
+/* featureSection css */
+.featureSection{
+    padding: 50px 0;
+    position: relative;
+}
+.featureTitle h2 {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.5;
+    color: var(--h2Color);
+}
+.featureContent p {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--pColor);
+    line-height: 2;
+    width: 500px;
+    position: relative;
+    top: 30px;
+}
+.featureBtn {
+    position: relative;
+    top: 77px;
+    left: 0;
+}
+/* pricing section css */
+.pricingSection{
+    padding: 50px 0;
+    position: relative;
+}
+.pricingTitle p {
+    width: 500px;
+    margin: auto;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--pColor);
+    line-height: 1.7;
+}
+
+.pricingTitle h2 {
+    font-size: 40px;
+    font-weight: 600;
+    color: var(--h2Color);
+    line-height: 1.5;
+}
+.priciongTitle h1 {
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--h2Color);
+    line-height: 1.5;
+    letter-spacing: .3px;
+}
+
+.priciongPrice h2 {
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+.priciongPrice h2 sub {
+    font-size: 17px;
+    color: var(--pColor);
+}
+.pricionglist ul li {
+    line-height: 2;
+    color: var(--pColor);
+    font-size: 16px;
+}
+
+.pricionglist {
+    position: relative;
+    top: 20px;
+    bottom: 20px;
+}
+
+.priciongBtn a {
+    display: inline-block;
+    text-align: center;
+    font-size: 16px;
+    background: var(--btnBgColor);
+    color: var(--textColor);
+    padding: 10px 15px;
+    border-radius: 50px;
+    position: relative;
+    top: 30px;
+    left: 15px;
+    border: 2px solid var(--btnBgColor)
+    transition: all .5s ease;
+}
+.priciongBtn a:hover{
+    border: 2px solid var(--btnBgColor);
+    color: var(--btnBgColor);
+    background: transparent;
+}
+
+.pircingWrapper {
+    background: var(--textColor);
+    box-shadow: 0px 0px 5px var(--bgColor);
+    padding: 50px;
+    box-sizing: border-box;
+    position: relative;
+    transition: all .5s ease;
+}
+.pircingWrapper:hover{
+    box-shadow: none;
+    border: 1px solid var(--borderColor);
+    border-radius: 5px;
+}
+/* reviewSection css */
+.reviewSection{
+    padding: 100px 0;
+    position: relative;
+    top: 30px;
+}
+.reviewTitle h2 {
+    font-size: 40px;
+    font-weight: 600;
+    color: var(--h2Color);
+    line-height: 1.3;
+    position: relative;
+    top: 20px;
+    margin-bottom: 40px;
+}
+
+.reviewContent p {
+    font-size: 16px;
+    line-height: 2;
+    font-weight: 500;
+    color: var(--pColor);
+}
+.reviewWrapper{
+    width: 500px;
+    position: relative;
+    top: 50px;
+}
+.reviewContent h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--h2Color);
+    line-height: 1.5;
+}
+
+.reviewContent span {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--pColor);
+}
+/* contactSection css */
+.contactSection{
+    padding: 50px 0;
+}
+.contactTitle h1 {
+    width: 700px;
+    margin: auto;
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    color: var(--h2Color);
+    line-height: 1.3;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+.conInput input.contInput1 {
+    padding: 20px 20px;
+    font-size: 16px;
+    color: var(--pColor);
+    border: 1px solid var(--btnBgColor);
+    width: 500px;
+    transition: all .5s ease;
+    border-radius: 5px 0px 0px 5px;
+}
+.conInput input.contInput1:focus{
+    box-shadow: 0px 0px 5px var(--bgColor);
+    border: none;
+    transition: all .5s ease;
+}
+.conInput input.contInput2 {
+    padding: 20px 30px;
+    font-size: 16px;
+    border: 1px solid var(--btnBgColor);
+    background-color: var(--btnBgColor);
+    color: var(--textColor);
+    text-transform: uppercase;
+    position: relative;
+    left: -5px;
+    border-radius: 0px 5px 5px 0px;
+    border-left: none;
+    transition: all .5s ease;
+}
+.conInput input.contInput2:hover {
+    background: transparent;
+    color: var(--btnBgColor);
+}
+/* clicnt logo section css */
+.clientSection{
+    padding: 50px 0;
+    position: relative;
+}
+.clientLogo {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: all .5s ease;
+}
+ /* footer section css */
+.footerSection {
+    padding: 50px 0;
+    background-color: var(--footerBg);
+}
+.footerContent p {
+    font-size: 16px;
+    color: var(--pColor);
+    line-height: 1.7;
+    margin-top: 30px;
+}
+.footerContent p {
+    font-size: 16px;
+    color: var(--pColor);
+    line-height: 1.7;
+    margin-top: 30px;
+}
+
+.footerTitle h2 {
+    font-size: 25px;
+    font-weight: 700;
+    position: relative;
+    left: 30px;
+    margin-bottom: 20px;
+}
+
+.footerList ul li {
+    line-height: 2;
+    font-size: 16px;
+    color: var(--pColor);
+    font-weight: 500;
+}
+.copyText p b{
+    color:var(--btnBgColor)
+}
+.copyList ul li {
+    display: inline-block;
+    padding: 0px 20px;
+    position: relative;
+    left: 180%;
+}
+.copyList ul li a span{
+    color: var(--bgColor);
+    font-size: 16px;
+    transition: all .5s ease;
+}
+.copyList ul li a span:hover{
+    color: var(--btnBgColor);
+}
+.copyList ul {
+    display: flex;
+}
+.copyText p {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--pColor);
+}
+.copyRight {
+    margin-top: 30px;
+}
+
+hr {
+    margin-top: 60px;
+}
